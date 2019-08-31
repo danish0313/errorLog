@@ -1,14 +1,20 @@
 {
-  "name": "ecommerce",
+  "name": "errorLog",
   "version": "0.1.0",
+  "homepage": "https://danish0313.github.io/errorLog",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "axios": "^0.19.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
